@@ -1,10 +1,11 @@
+import All from "./All";
 import { Link, Outlet } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-primary p-2">
-        <Link className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/all">
           <img
             src="https://reactrouter.com/_brand/react-router-stacked-color.png"
             style={{ width: "100px" }}
@@ -52,6 +53,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+      <All />
       <Outlet />
     </div>
   );
